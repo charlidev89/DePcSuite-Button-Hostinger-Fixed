@@ -11,21 +11,90 @@
     --primary-color: #673de6;
     --primary-color-hover: #462b96;
     --button-color: white;
+    --link-color: black;
+    --link-hover-color: #929292;
+    --background-color:white;
 }
 
-.kode-button svg.h-icon {
-    color: white !important;
-    fill: white !important;
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 14px;
 }
+
+a:hover {
+    color: var(--link-hover-color)
+}
+
+ul {
+    list-style: none;
+}
+
+/* NAVBAR */
+
+
+.navigation-container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35px;
+}
+
+.navigation-access-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigation-idiom {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.navigation-button {
+    border: 1px solid var(--link-color);
+    padding: 11px 15px;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.navigation-button:hover {
+    border: 1px solid var(--link-hover-color);
+}
+
+
+
+
+/*  BOTON PREGUNTARLE A  KODEE */
+
+
 
 body {
-    background: #E0EAFC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 14px;
+    background: var(--background-color)
 }
 
 .container {
@@ -36,6 +105,7 @@ body {
 
 button {
     border: none;
+    background-color: var(--button-color)
 }
 
 .kode-button {
