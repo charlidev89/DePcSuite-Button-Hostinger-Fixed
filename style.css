@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #673de6;
+    --primary-color-hover: #462b96;
+    --button-color: white;
+}
+
+.kode-button svg.h-icon {
+    color: white !important;
+    fill: white !important;
+}
+
+body {
+    background: #E0EAFC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 14px;
+}
+
+.container {
+    width: 1200px;
+    height: 3000px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+}
+
+.kode-button {
+    background-color: var(--primary-color);
+    color: var(--button-color);
+    padding: 10px 25px;
+    border-radius: 100px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-weight: 600;
+}
+
+.kode-button:hover {
+    background-color: var(--primary-color-hover);
+}
