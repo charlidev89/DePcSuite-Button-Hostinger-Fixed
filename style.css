@@ -13,14 +13,18 @@
     --button-color: white;
     --link-color: black;
     --link-hover-color: #929292;
-    --background-color:white;
+    --background-color: white;
+}
+
+body {
+    background: var(--background-color)
 }
 
 
 a {
     text-decoration: none;
     color: var(--link-color);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 a:hover {
@@ -39,10 +43,9 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 25px 35px;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
+
 
 }
 
@@ -71,7 +74,7 @@ ul {
 
 .navigation-idiom {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .navigation-button {
@@ -79,26 +82,45 @@ ul {
     padding: 11px 15px;
     border-radius: 7px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .navigation-button:hover {
     border: 1px solid var(--link-hover-color);
 }
 
+@media (max-width: 1024px) {
+    .navigation-container-content {
+        padding: 15px 20px;
+    }
 
+    .navigation-list {
+
+        display: none;
+
+    }
+
+    .navigation-access-container {
+        display: none;
+
+    }
+
+    .ham-button {
+        display: block;
+        z-index: 1001;
+        width: 24px;
+        height: 24px;
+    }
+}
 
 
 /*  BOTON PREGUNTARLE A  KODEE */
 
 
 
-body {
-    background: var(--background-color)
-}
 
 .container {
-    width: 1200px;
+
     height: 3000px;
     margin: 0 auto;
 }
